@@ -4,7 +4,7 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 
 const listGallery = document.querySelector('.gallery');
 
-const gallery = new SimpleLightbox('.gallery__item', { captionSelector: 'img', captionsData: 'alt', captionPosition: 'bottom', captionDelay: 250 });
+const gallery = new SimpleLightbox('.gallery a', { captionSelector: 'img', captionsData: 'alt', captionPosition: 'bottom', captionDelay: 250 });
 
 function createGallleryMarkup(galleryItems) {
     const galleryMarkup = galleryItems.map(({ preview, original, description }) => {
